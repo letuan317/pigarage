@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Garage Demo</h1>
+      <form action="/Garage" method="post" id="garageform">
+        <h5>Garage Code</h5>
+        <input
+          id="garagecode"
+          name="garagecode"
+          type="text "
+          pattern="[0-9]*"
+          value=""
+          style="background-color: white"
+        />
+        <div class="controlers">
+          <img
+            src="assets/GarageGreen.gif"
+            onclick="document.forms['garageform'].submit();"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
